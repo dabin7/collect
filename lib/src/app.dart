@@ -45,8 +45,7 @@ class App extends GetView<BottomNavController> {
           ),
         ),
         ),
-        onWillPop: () async {
-          return false;
-        });
+        onWillPop: controller.willPopAction,
+    );
   }
 }
